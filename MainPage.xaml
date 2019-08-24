@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="Sketchblock.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sketchblock"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White">
+
+    <Grid>
+        <Canvas x:Name="selectionCanvas"/>
+        <InkCanvas x:Name="canvas"/>
+        <InkToolbar HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Vertical" RequestedTheme="Light" Background="#f5f5f5" x:Name="toolbar" TargetInkCanvas="{x:Bind canvas}">
+            <InkToolbarCustomToolButton x:Name="select" Click="Select_Click" ToolTipService.ToolTip="Select">
+                <SymbolIcon Symbol="{x:Bind SelectIcon}" />
+            </InkToolbarCustomToolButton>
+            <AppBarSeparator/>
+            <InkToolbarCustomToggleButton x:Name="cut" Click="Cut_Click" ToolTipService.ToolTip="Cut">
+                <SymbolIcon Symbol="Cut" />
+            </InkToolbarCustomToggleButton>
+            <InkToolbarCustomToggleButton x:Name="copy" Click="Copy_Click" ToolTipService.ToolTip="Copy">
+                <SymbolIcon Symbol="Copy" />
+            </InkToolbarCustomToggleButton>
+            <InkToolbarCustomToggleButton x:Name="paste" Click="Paste_Click" ToolTipService.ToolTip="Paste">
+                <SymbolIcon Symbol="Paste" />
+            </InkToolbarCustomToggleButton>
+            <AppBarSeparator/>
+            <InkToolbarCustomToggleButton x:Name="undo" Click="Undo_Click" ToolTipService.ToolTip="Undo">
+                <SymbolIcon Symbol="Undo" />
+            </InkToolbarCustomToggleButton>
+            <InkToolbarCustomToggleButton x:Name="redo" Click="Redo_Click" ToolTipService.ToolTip="Redo">
+                <SymbolIcon Symbol="Redo" />
+            </InkToolbarCustomToggleButton>
+            <AppBarSeparator/>
+            <InkToolbarCustomToggleButton x:Name="delete" Click="Delete_Click" ToolTipService.ToolTip="Clear Canvas">
+                <SymbolIcon Symbol="Delete" />
+            </InkToolbarCustomToggleButton>
+            <InkToolbarCustomToggleButton x:Name="open" Click="Open_Click" ToolTipService.ToolTip="Open Sketch">
+                <SymbolIcon Symbol="OpenFile" />
+            </InkToolbarCustomToggleButton>
+            <InkToolbarCustomToggleButton x:Name="save" Click="Save_Click" ToolTipService.ToolTip="Save Sketch">
+                <SymbolIcon Symbol="Save" />
+            </InkToolbarCustomToggleButton>
+            <AppBarSeparator/>
+            <InkToolbarCustomToggleButton x:Name="touch" Click="Touch_Click" ToolTipService.ToolTip="Touch Input">
+                <SymbolIcon Symbol="{x:Bind TouchWritingIcon}" />
+            </InkToolbarCustomToggleButton>
+            <InkToolbarCustomToggleButton x:Name="fullscreen" Click="Fullscreen_Click" ToolTipService.ToolTip="Toggle Fullscreen">
+                <SymbolIcon Symbol="FullScreen" />
+            </InkToolbarCustomToggleButton>
+            <InkToolbarCustomToggleButton x:Name="close" Click="Close_Click" ToolTipService.ToolTip="Close" >
+                <SymbolIcon Symbol="Cancel"/>
+            </InkToolbarCustomToggleButton>
+        </InkToolbar>
+    </Grid>
+</Page>
