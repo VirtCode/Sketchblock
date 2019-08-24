@@ -1,0 +1,165 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 51px;
+    background: #000000d2;
+}
+.bar a {
+    font-family: myriad-pro-condensed, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+
+    position: relative;
+    float: right;
+    text-align: center;
+    line-height: 45px;
+    margin-right: 2pt;
+    margin-left: 3pt;
+    margin-top: 2pt;
+    margin-bottom: 2pt;
+    text-decoration: none;
+    font-size: 20px;
+    width: 160px;
+    height: 45px;
+    transition: 0.35s;
+}
+.bar a svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.bar a svg rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+}
+.bar a:hover svg rect {
+    stroke-width: 3;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.bar a:hover {
+    font-weight: 0;
+    letter-spacing:2pt;
+}
+.bar img {
+    float: left;
+    margin-right: 4pt;
+    margin-left: 4pt;
+    margin-top: 1pt;
+    margin-bottom: 1pt;
+    width: 47px;
+    height: 47px;
+}
+.bar p {
+    float: left;
+    float: top;
+    position: relative;
+    font-family: Calibri Light;
+    color: white;
+    font-size: 24px;
+    font-display: initial;
+    line-height: 0;
+    width: 160px;
+    height: 45px;
+}
+
+
+
+.one {
+    background-color: rgb(43, 43, 43);
+}
+.two {
+    background-color: rgb(31, 31, 31);
+}
+
+.text {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.text h1 {
+    font-family: myriad-pro-condensed, sans-serif;
+    font-size: 48px;
+    color: white;
+}
+.text h2 {
+    font-family: Calibri Light;
+    font-size: 20px;
+    color: white;
+    line-height: 0;
+}
+.text p {
+    font-family: Calibri;
+    font-size: 14px;
+    color: white;
+}
+
+.main {
+    background-image: url("background.jpg");
+}
+
+.main h1 {
+    padding-top: 100px;
+    font-family: Calibri;
+    font-size: 86px;
+    text-align: center;
+}
+
+.main h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: -50px;
+    padding-bottom: 20px;
+}
+
+.main a {
+    align-self: center;
+    align-content: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.dlbtn {
+    font-family: Calibri;
+    font-style: normal;
+    font-variant: small-caps;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+
+    width: 240px;
+    height: 45px;
+
+    padding: 5px;
+
+    color: white;
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, .5);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.dlbtn:hover {
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    border: 1px solid;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 25px;
+}
