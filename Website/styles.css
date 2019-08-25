@@ -1,165 +1,317 @@
 body {
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
 }
 
 .bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 51px;
-    background: #000000d2;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 51px;
+	background: #000000d2;
 }
 .bar a {
-    font-family: myriad-pro-condensed, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
+	font-family: myriad-pro-condensed, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: white;
 
-    position: relative;
-    float: right;
-    text-align: center;
-    line-height: 45px;
-    margin-right: 2pt;
-    margin-left: 3pt;
-    margin-top: 2pt;
-    margin-bottom: 2pt;
-    text-decoration: none;
-    font-size: 20px;
-    width: 160px;
-    height: 45px;
-    transition: 0.35s;
+	position: relative;
+	float: right;
+	text-align: center;
+	line-height: 45px;
+	margin-right: 2pt;
+	margin-left: 3pt;
+	margin-top: 2pt;
+	margin-bottom: 2pt;
+	text-decoration: none;
+	font-size: 20px;
+	width: 160px;
+	height: 45px;
+	transition: 0.35s;
 }
 .bar a svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 .bar a svg rect {
-    fill: none;
-    stroke: #fff;
-    stroke-width: 2;
-    stroke-dasharray: 422, 0;
-    transition: all 0.35s linear;
+	fill: none;
+	stroke: #fff;
+	stroke-width: 2;
+	stroke-dasharray: 422, 0;
+	transition: all 0.35s linear;
 }
 .bar a:hover svg rect {
-    stroke-width: 3;
-    stroke-dasharray: 15, 310;
-    stroke-dashoffset: 48;
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+	stroke-width: 3;
+	stroke-dasharray: 15, 310;
+	stroke-dashoffset: 48;
+	transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .bar a:hover {
-    font-weight: 0;
-    letter-spacing:2pt;
+	font-weight: 0;
+	letter-spacing: 2pt;
 }
 .bar img {
-    float: left;
-    margin-right: 4pt;
-    margin-left: 4pt;
-    margin-top: 1pt;
-    margin-bottom: 1pt;
-    width: 47px;
-    height: 47px;
+	float: left;
+	margin-right: 4pt;
+	margin-left: 4pt;
+	margin-top: 1pt;
+	margin-bottom: 1pt;
+	width: 47px;
+	height: 47px;
 }
 .bar p {
-    float: left;
-    float: top;
-    position: relative;
-    font-family: Calibri Light;
-    color: white;
-    font-size: 24px;
-    font-display: initial;
-    line-height: 0;
-    width: 160px;
-    height: 45px;
+	float: left;
+	float: top;
+	position: relative;
+	font-family: Calibri Light;
+	color: white;
+	font-size: 24px;
+	font-display: initial;
+	line-height: 0;
+	width: 160px;
+	height: 45px;
 }
-
-
 
 .one {
-    background-color: rgb(43, 43, 43);
+	background-color: rgb(43, 43, 43);
 }
 .two {
-    background-color: rgb(31, 31, 31);
+	background-color: rgb(31, 31, 31);
 }
 
 .text {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 .text h1 {
-    font-family: myriad-pro-condensed, sans-serif;
-    font-size: 48px;
-    color: white;
+	font-family: myriad-pro-condensed, sans-serif;
+	font-size: 64px;
+	color: white;
 }
 .text h2 {
-    font-family: Calibri Light;
-    font-size: 20px;
-    color: white;
-    line-height: 0;
+	margin-top: -35px;
+	font-family: Calibri Light;
+	font-size: 28px;
+	color: white;
+	line-height: 0;
 }
 .text p {
-    font-family: Calibri;
-    font-size: 14px;
-    color: white;
+	font-family: Calibri;
+	font-size: 22px;
+	color: white;
 }
 
 .main {
-    background-image: url("background.jpg");
+	background-image: url("Pictures/background.jpg");
 }
 
 .main h1 {
-    padding-top: 100px;
-    font-family: Calibri;
-    font-size: 86px;
-    text-align: center;
+	padding-top: 100px;
+	font-family: Calibri;
+	font-size: 86px;
+	text-align: center;
 }
 
 .main h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-top: -50px;
-    padding-bottom: 20px;
+	text-align: center;
+	font-size: 32px;
+	margin-top: -50px;
+	padding-bottom: 20px;
 }
 
 .main a {
-    align-self: center;
-    align-content: center;
-    margin: 0 auto;
-    display: block;
+	align-self: center;
+	align-content: center;
+	margin: 0 auto;
+	font-variant: small-caps;
+	display: block;
+}
+
+.main p {
+	padding-top: 80px;
+	padding-left: 200px;
+	padding-right: 200px;
 }
 
 .dlbtn {
-    font-family: Calibri;
-    font-style: normal;
-    font-variant: small-caps;
-    font-size: 32px;
-    text-align: center;
-    text-decoration: none;
+	font-family: Calibri;
+	font-style: normal;
+	font-size: 32px;
+	text-align: center;
+	text-decoration: none;
 
-    width: 240px;
-    height: 45px;
+	width: 240px;
+	height: 45px;
 
-    padding: 5px;
+	padding: 5px;
 
-    color: white;
-    border: 1px solid;
-    border-color: rgba(255, 255, 255, .5);
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-    outline: 1px solid;
-    outline-color: rgba(255, 255, 255, .5);
-    
-    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+	color: white;
+	border: 1px solid;
+	border-color: rgba(255, 255, 255, .8);
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+	outline: 1px solid;
+	outline-color: rgba(255, 255, 255, .8);
+
+	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .dlbtn:hover {
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-    border: 1px solid;
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 25px;
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+	border: 1px solid;
+	outline-color: rgba(255, 255, 255, 0);
+	outline-offset: 25px;
+}
+
+.changelog {
+	column-count: 4;
+}
+
+.changelog p {
+	font-size: 24px;
+}
+
+.changelist {
+    margin-top: -15px;
+}
+
+.changelog ul {
+    list-style-type: disc;
+	font-family: Calibri;
+	font-size: 22px;
+	color: white;
+}
+
+.changelog ul li {
+    list-style-type: disc;
+	font-family: Calibri;
+	font-size: 22px;
+	color: white;
+}
+
+.slide {
+	display: none;
+}
+
+.prev,
+.next {
+	cursor: pointer;
+	position: relative;
+	width: auto;
+	float: left;
+	padding: 16px;
+	margin-top: -150px;
+	color: #3a3a3a;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	float: right;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cap {
+	color: #3a3a3a;
+	font-family: Calibri;
+	font-size: 24px;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: -40px;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin-top: 5px;
+	margin-left: 4px;
+	background-color: #bbb;
+	border-radius: 50%;
+
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.activedot,
+.dot:hover {
+	background-color: #717171;
+}
+
+.dltable {
+	padding-left: 100px;
+}
+
+.dltable p {
+	text-align: start;
+}
+
+.dlversion {
+	font-family: Calibri;
+	font-style: normal;
+	font-size: 26px;
+	text-align: center;
+	text-decoration: none;
+
+	color: white;
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+	border: 1px solid;
+	border-color: rgba(255, 255, 255, .8);
+	border-radius: 0px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.dlversion:hover {
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+}
+
+.dlinstall {
+	margin-right: -2px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.dlinstall:hover {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.dldownload {
+	margin-left: -3px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.dldownload:hover {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+footer {
+	font-family: Calibri;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }

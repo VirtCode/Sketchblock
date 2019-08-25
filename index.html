@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="Website/styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ksl0ifc.css">
+        <link rel="icon" type="image/svg" href="Website/Pictures/logo.svg">
+        <script src="Website/index.js"></script>
+        <meta charset="utf-8" />
+        <title>Sketchblock</title>
+    </head>
+    <body  onload="currentSlide(1)">
+        <div class="bar">
+            <a href="#about">
+                <svg>
+                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                </svg>
+                About
+            </a>
+                <a href="#download">
+                    <svg>
+                        <rect x="0" y="0" fill="none" width="100%" height="100%">
+                    </svg>
+                    Download
+                </a>
+            <a href="#gallery">
+                <svg>
+                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                </svg>
+                Gallery
+            </a>
+            <a href="#changelog">
+                <svg>
+                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                </svg>
+                Changelog
+            </a>
+            <a href="#home">
+                <svg>
+                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                </svg>
+                Home
+            </a>
+            <img src="Website/Pictures/logo.svg" alt="Icon">
+            <p>Sketchblock</p>
+        </div>
+                
+        <div class="text main" id="home">
+            <h1>Sketchblock</h1>
+            <h2>An alternative to the Windows Ink Sketchpad</h2>
+            <a href="#download" class="dlbtn">Download Now</a>
+            <p>Sketchblock is a simple drawing application for Windows Ink. It's designed to be simple and lightweight but still functional and easy to use. Since the official Windows Ink Sketchpad was removed with the latest update, it is especcialy required to find a good replacement, so I made one. However it is not intended to use this programm for professial use or as an art programm because it has only basic functionality. Although it is good enough to make short notes at work or so. It is completly free to use and is available for download in the download section.</p>
+        </div>
+        <div class="text two" id="changelog">
+            <h1>Changelog</h1>
+            <h2>Things that are new</h2>
+            <div class="changelog">
+                <p>Version 0.1</p>
+                <ul class="changelist">
+                    <li>Ink Canvas with Pressure Sensivity</li>
+                    <il>Ink Toolbar
+                        <ul>Pen Tool</ul>
+                        <ul>Pencil Tool</ul>
+                        <ul>Erase Tool</ul>
+                        <ul>Marker Tool</ul>
+                        <ul>Ruler and Protractor</ul>
+                    </li>
+                </ul>
+                <p>Version 0.2</p>
+                <ul class="changelist">
+                    <li>Clear Entire Canvas Tool</li>
+                    <li>Save Strokes</li>
+                    <li>Reopen Strokes</li>
+                </ul>
+                <p>Version 0.3</p>
+                <ul class="changelist">
+                    <li>Undo Button</li>
+                    <li>Redo Button</li>
+                    <li>Enable and disable Touch Input</li>
+                </ul>
+                <p>Version 0.4</p>
+                <ul class="changelist">
+                    <li>Select Tool</li>
+                    <li>Cut Option</li>
+                    <li>Copy Option</li>
+                    <li>Paste Option</li>
+                    <li>Delete Fuction for Selection</li>
+                </ul>
+                <p><br><br>Version 1.0</p>
+                <ul class="changelist">
+                    <li>Ability to move Selections</li>
+                    <li>Fullscreen Mode</li>
+                    <li>Fullscren Close Button</li>
+                </ul>
+                <p>Version 1.1</p>
+                <ul class="changelist">
+                    <li>Clear Canvas Prompt</li>
+                    <li>Exit Programm Prompt</li>
+                    <li>Polishments</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text one" id="gallery">
+            <h1>Gallery</h1>
+            <h2>Screenshots</h2>
+            <div class="gallery" onload="currentSlide(1)">
+                <div class="slide">
+                    <img src="Website/Pictures/screenshot1.png" style="width:100%">
+                    <div class="cap">Blank Workspace</div>
+                </div>
+                <div class="slide">
+                    <img src="Website/Pictures/screenshot2.png" style="width:100%">
+                    <div class="cap">Basic Inking</div>
+                </div>
+                <div class="slide">
+                    <img src="Website/Pictures/screenshot3.png" style="width:100%">
+                    <div class="cap">Select Function</div>
+                </div>
+                <div class="slide">
+                    <img src="Website/Pictures/screenshot4.png" style="width:100%">
+                    <div class="cap">Clear Canvas Prompt</div>
+                </div>
+                <div class="slide">
+                    <img src="Website/Pictures/screenshot5.png" style="width:100%">
+                    <div class="cap">Exit Prompt</div>
+                </div>
+                <div class="slide">
+                    <img src="Website/Pictures/screenshot6.png" style="width:100%">
+                    <div class="cap">Ruler Functionality</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+        </div>
+        <div class="text two" id="download">
+            <h1>Download</h1>
+            <h2>Version 1.1.2</h2>
+            <p>Since Sketchblock is founded on the UWP API from Microsoft, you will only be able to install it on one of the newer versions of Windows 10. <br>Click on Install to install it directly out of your browser. If you first want to download it, you can do it by clicking Download.</p>
+
+            <table class="dltable">
+                    <col width="400px">
+                    <col>
+                <tr>
+                    <th>
+                        <p>Windows 10 - x64 Architecture</p>
+                    </th>
+                    <th>
+                        <a href="ms-appinstaller:?virtcode.github.io/Sketchblock/Website/Downloads/Sketchblock_x64.msix" class="dlversion dlinstall">Install</a>
+                        <a href="https://virtcode.github.io/Sketchblock/Website/Downloads/Sketchblock_x64.msix" class="dlversion dldownload">Download</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Windows 10 - x86 Architecture</p>
+                    </th>
+                    <th>
+                        <a href="ms-appinstaller:?adress/virtcode.github.io/Sketchblock/Downloads/Sketchblock_x86.msix" class="dlversion dlinstall">Install</a>
+                        <a href="https://virtcode.github.io/Sketchblock/Website/Downloads/Sketchblock_x86.msix" class="dlversion dldownload">Download</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>Windows 10 - ARM Architecture</p>
+                    </th>
+                    <th>
+                        <a href="ms-appinstaller:?virtcode.github.io/Sketchblock/Website/Downloads/Sketchblock_ARM.msix" class="dlversion dlinstall">Install</a>
+                        <a href="https://virtcode.github.io/Sketchblock/Website/Downloads/Sketchblock_ARM.msix" class="dlversion dldownload">Download</a>
+                    </th>
+                </tr>
+            </table>
+            
+            
+            
+        </div>
+        <div class="text one" id="about">
+            <h1>About</h1>
+            <h2>This Project</h2>
+            <p>This Program is completly free to use. I made this in about 5 hours so it would be unfair to request money for it. If you find a nasty bug or have a feature request, you can do this on the corresponding GitHub repository. However please credit this piece of Software if you use it in a big commercial Project. If you have a question about this, you can contact me over my E-Mail shown on GitHub. Have Fun!<br><br><i>A Project by Virt.</i></p>
+        </div>
+    </body>
+    <footer class="two">
+        <P>© Virt 2019 - All rights reserved.</P>
+    </footer>
+</div>
+</html> 
